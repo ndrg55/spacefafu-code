@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spacefafu_base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spacefafu_chat" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spacefafu_common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spacefafu_eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spacefafu_gathering" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spacefafu_manager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spacefafu_qa" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spacefafu_search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spacefafu_sms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spacefafu_spit" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spacefafu_user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spacefafu_web" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

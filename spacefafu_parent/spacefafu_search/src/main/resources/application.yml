@@ -1,0 +1,14 @@
+server:
+  port: 9007
+spring:
+  application:
+    name: spacefafu-search
+  data:
+    elasticsearch:
+      cluster-nodes: 192.168.15.128:9300
+eureka:
+ client:
+  service-url:
+   defaultZone: http://localhost:6868/eureka
+ instance:
+  prefer-ip-address: true

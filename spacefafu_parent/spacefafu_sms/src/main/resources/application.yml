@@ -1,0 +1,20 @@
+server:
+  port: 9009
+spring:
+  application:
+    name: spacefafu-sms
+  rabbitmq:
+    host: 192.168.15.128
+aliyun:
+  sms:
+    accessKeyId: LTAINtOacBB79IOh
+    accessKeySecret: kBv5Vh7FRO2CoxnuJcE4GgZrcdqxDW
+    template_code: SMS_143862580
+    sign_name: 学习项目品优购
+eureka:
+ client:
+  service-url:
+   defaultZone: http://localhost:6868/eureka
+ instance:
+  prefer-ip-address: true
+

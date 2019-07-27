@@ -1,0 +1,50 @@
+server:
+ port: 9012
+spring:
+ application:
+  name: spacefafu-web #指定服务名
+eureka:
+ client:
+  serviceUrl: #Eureka客户端与Eureka服务端进行交互的地址
+   defaultZone: http://127.0.0.1:6868/eureka/
+ instance:
+  prefer-ip-address: true
+zuul:
+ routes:
+  spacefafu-gathering: #活动
+   path: /gathering/** #配置请求URL的请求规则
+   serviceId: spacefafu-gathering #指定Eureka注册中心中的服务id
+  spacefafu-article: #文章
+   path: /article/** #配置请求URL的请求规则
+   serviceId: spacefafu-article #指定Eureka注册中心中的服务id
+  spacefafu-base: #基础
+   path: /base/** #配置请求URL的请求规则
+   serviceId: spacefafu-base #指定Eureka注册中心中的服务id
+  spacefafu-qa: #问答
+   path: /qa/** #配置请求URL的请求规则
+   serviceId: spacefafu-qa #指定Eureka注册中心中的服务id
+  spacefafu-spit: #吐槽
+   path: /spit/** #配置请求URL的请求规则
+   serviceId: spacefafu-spit #指定Eureka注册中心中的服务id
+  spacefafu-user: #用户
+   path: /user/** #配置请求URL的请求规则
+   serviceId: spacefafu-user #指定Eureka注册中心中的服务id
+  spacefafu-search: #搜索
+   path: /search/** #配置请求URL的请求规则
+   serviceId: spacefafu-search #指定Eureka注册中心中的服务id
+  spacefafu-chat: #消息 私聊
+    path: /chat/** #配置请求URL的请求规则
+    serviceId: spacefafu-chat #指定Eureka注册中心中的服务id
+ host:
+   socket-timeout-millis: 60000
+   connect-timeout-millis: 60000
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+hystrix:
+    command:
+        default:
+            execution:
+                isolation:
+                    thread:
+                        timeout-in-milliseconds: 20000

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spacefafu_base" />
+        <module name="spacefafu_chat" />
+        <module name="spacefafu_common" />
+        <module name="spacefafu_eureka" />
+        <module name="spacefafu_gathering" />
+        <module name="spacefafu_manager" />
+        <module name="spacefafu_qa" />
+        <module name="spacefafu_search" />
+        <module name="spacefafu_sms" />
+        <module name="spacefafu_spit" />
+        <module name="spacefafu_user" />
+        <module name="spacefafu_web" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

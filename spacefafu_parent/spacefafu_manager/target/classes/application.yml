@@ -1,0 +1,35 @@
+server:
+  port: 9011
+spring:
+  application:
+    name: spacefafu-manager
+eureka:
+  client:
+    service-url:
+     defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+     prefer-ip-address: true
+zuul:
+  routes:
+    spacefafu-gathering: #活动
+     path: /gathering/** #配置请求URL的请求规则
+     serviceId: spacefafu-gathering #指定Eureka注册中心中的服务id
+    spacefafu-article: #文章
+     path: /article/** #配置请求URL的请求规则
+     serviceId: spacefafu-article #指定Eureka注册中心中的服务id
+    spacefafu-base: #基础
+     path: /base/** #配置请求URL的请求规则
+     serviceId: spacefafu-base #指定Eureka注册中心中的服务id
+    spacefafu-qa: #问答
+     path: /qa/** #配置请求URL的请求规则
+     serviceId: spacefafu-qa #指定Eureka注册中心中的服务id
+    spacefafu-spit: #吐槽
+     path: /spit/** #配置请求URL的请求规则
+     serviceId: spacefafu-spit #指定Eureka注册中心中的服务id
+    spacefafu-user: #用户
+     path: /user/** #配置请求URL的请求规则
+     serviceId: spacefafu-user #指定Eureka注册中心中的服务id
+jwt:
+ config:
+  key: itcast
+  ttl: 360000

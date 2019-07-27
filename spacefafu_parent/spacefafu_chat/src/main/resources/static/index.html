@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>websocket</title>
+    <meta charset="UTF-8">
+    <script src="https://cdn.bootcss.com/sockjs-client/1.1.4/sockjs.min.js"></script>
+    <script src="https://cdn.bootcss.com/stomp.js/2.3.3/stomp.min.js"></script>
+    <script type="text/javascript">
+        var stompClient=null;
+        function connect(){
+            var socket = new SockJS('http://localhost:8080/my-websocket');
+            stompClient = Stomp.over(socket);
+            stompClient.connect({"login": document.getElementById("username").value }, function(frame) {
+                // 注册发送消息
+                stompClient.subscribe('/user/topic/send', function(msg) {
+                    var body= JSON.parse(msg.body) ;
+                    document.getElementById('message').innerHTML += "<br>"+body.date+"  "+ body.message;
+                });
+
+                // 注册推送时间回调
+                stompClient.subscribe('/topic/callback', function(r) {
+                    document.getElementById("message").innerHTML='当前服务器时间：' + r.body;
+                });
+            });
+        }
+
+        //发送
+        function send() {
+            stompClient.send("/app/send", {}, JSON.stringify({
+                'toUser' :document.getElementById('toUser').value,
+                'message': document.getElementById('content').value
+            }));
+        }
+    </script>
+</head>
+<body>
+<div>
+    我的名字：<input id="username">
+    <button onclick="connect()" type="button">进入聊天室</button>
+    <input id="toUser">
+    <input type="text"
+           id="content"  placeholder="请输入内容..." />
+    <button onclick="send()" type="button">发送</button>
+    <br/> 消息列表： <br/>
+    <div id="message"></div>
+</div>
+</body>
+</html>

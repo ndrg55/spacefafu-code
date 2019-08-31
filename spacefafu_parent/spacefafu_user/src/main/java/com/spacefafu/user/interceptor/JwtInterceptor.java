@@ -31,7 +31,6 @@ public class JwtInterceptor extends HandlerInterceptorAdapter {
                         }
                     }
                 } catch (Exception e) {
-
                 }
             }
         }

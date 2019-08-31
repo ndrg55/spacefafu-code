@@ -1,0 +1,111 @@
+  .account {
+    padding: 1px 10px;
+  }
+  
+    .account h4 {
+    padding: 25px;
+    font-size: 16px;
+    line-height: 32px;
+    background: #fff;
+  }
+  
+    .account h4 span {
+    padding: 4px 15px;
+    border-bottom: 2px solid #409EFF;
+  }
+    .account .infomain {
+    padding: 35px 20px 40px 20px;
+    margin-top: 2px;
+    background: #fff;
+    overflow: hidden;
+  }
+    .account .infomain .header {
+    float: left;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+   
+}
+
+  .account .infomain .head {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 16px auto 0px;
+}
+  .account .infomain .header .modify {
+    font-size: 14px;
+    color: rgb(51, 153, 234);
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+  .account .infomain .right_c{
+    float: left;
+    width: 700px;
+    
+}
+  .account .infomain .right_c .right_info{
+    margin-top: 16px;
+    overflow: hidden;
+}
+  .account .infomain .right_c .right_info .id_card {
+    height: 20px;
+    line-height: 20px;
+}
+  .account .infomain .right_c .right_info .id_card .id_name {
+    float: left;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    margin-right: 16px;
+    margin-bottom: 15px;
+}
+  .account .infomain .right_c .right_info .id_card .user_home {
+    float: right;
+    font-size: 14px;
+    color: rgb(51, 153, 234);
+    padding-right: 9.3px;
+    cursor: pointer;
+}
+  .account .infomain .right_c .csdn_info {
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+  .account .infomain .right_c .nick {
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+}
+  .account .infomain .right_c .nick .mod {
+    float: right;
+    font-size: 14px;
+    color: rgb(51, 153, 234);
+    cursor: pointer;
+}
+  .account .infomain .right_c .self .comon {
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    color: rgb(77, 77, 77);
+}
+li {
+    list-style: none;
+}
+  .account .infomain .right_c .self .intro {
+    margin-top: 5px;
+    font-size: 14px;
+    color: rgb(77, 77, 77);
+    overflow: hidden;
+}
+  .account .infomain .right_c .self .intro .noWid {
+    float: left;
+}
+  .account .infomain .right_c .self .intro .cont {
+    float: left;
+
+}
+  .account .infomain .right_c  .line {
+    height: 1px;
+    background: #e0e0e0;
+}
